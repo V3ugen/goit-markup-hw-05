@@ -87,6 +87,7 @@ a.logo {
 .link.active{
     color: var(--hower-color);
 }
+
 /* ССЫЛКИ */
 .link:hover,
 .link:focus
@@ -102,19 +103,17 @@ a.logo {
     padding-bottom: 20px;
 }
 .icons{
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
 }
-.email{
-    fill: var(--primary-text-color);
-}
-.email:hover,.tel:hover{
-    fill: currentColor;
-}
+.email,
 .tel{
     fill: var(--primary-text-color);
 }
+.email:hover,
+.tel:hover{
+    fill: currentColor;
+}
+
 /* КОНТАКТЫ */
 .contacts a:hover,
 .contacts a:focus {
@@ -194,21 +193,17 @@ a.logo {
 .benefits-list-icon{
     height: 70px;
     width: 70px;
-
-    margin: 25px 100px;
-    
 }
 .benefits-list-item{
-    
-    display: block;
-    height: 120px;
+    justify-content: center;
+    display: flex;
+
     width: 270px;
-    
+    padding: 25px 0;
     margin-right: 30px;
+
     border-radius: 4px;
     background-color: var(--button-color);
-
-
 }
 /* НЕВИДИМЫЙ ТЕКСТ */
 .hide {
@@ -240,7 +235,8 @@ a.logo {
 .benefits-text {
     font-weight: 400;
     line-height: 1.71;
-    margin-top: 10px;   
+    margin-top: 10px;
+    margin-right: 30px;   
 }
 /* НАША КОМАНДА */
 .team-pic-list{
@@ -277,8 +273,10 @@ margin-left: 30px;
     
     padding-bottom: 30px;
 }
-.team-item-text>img{
-    margin-bottom: 30px;
+.team-item>img{
+    
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
+    0px 1px 1px rgb(0 0 0 / 14%)
 }
 .team-list .team-item + .team-item{
     margin-left: 30px;
@@ -290,6 +288,7 @@ margin-left: 30px;
 
     color: var(--secondary-color);
     text-align: center;
+    padding-top: 30px;
 }
 .team-text {
     font-size: 16px;
@@ -342,6 +341,7 @@ margin-left: 30px;
     border: 1px solid var(--icon-color);
     border-radius: 4px ;
     fill: var(--icon-color);
+    box-shadow: 0px 4px 4px 0px #00000040;
 }
 .clients-link:hover{
     border: 1px solid var(--hower-color);
@@ -366,7 +366,7 @@ margin-left: 30px;
     font-weight: 700;
     font-style: normal;
     display: block;
-    margin-bottom: 20px;
+    
 }
 /* ССЫЛКА НА КАРТЫ В ФУТЕРЕ */
 .address-address{
@@ -389,10 +389,13 @@ margin-left: 30px;
 }
 .footer{
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .join-section{
-    
+    display: flex;
+    flex-direction: column;
+}
+.join-section:last-child{
     margin-left: 70px;
 }
 .join-title{
